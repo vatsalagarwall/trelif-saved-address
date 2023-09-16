@@ -1,0 +1,279 @@
+/* button 
+.button {
+  background-color: #a08862;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  background: var(--Primary, #a08862);
+}
+
+.button-content {
+  display: inline-flex;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-address {
+  color: var(--Neutral, #e9e9e9);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+}
+
+
+
+.default-address {
+  color: var(--Secondary, #3e3636);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; 
+  padding: 20px 10px 10px 10px;
+}
+
+.default-address-card {
+  margin: 10px;
+  border: none;
+  background-color: #e9e9e9;
+}
+
+.other-address {
+  color: var(--Secondary, #3e3636);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; 
+  padding: 20px 10px 10px 10px;
+}
+
+.pen-line .cross {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--Neutral, #e9e9e9);
+}
+
+.tag {
+  display: flex;
+  width: 82px;
+  height: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #f2e5d5;
+}
+
+.icons {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  background: var(--Neutral, #e9e9e9);
+} */
+
+/* Default styles for larger screens */
+.button {
+  background-color: #a08862;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  background: var(--Primary, #a08862);
+  margin-left: 10px;
+}
+
+.button-content {
+  display: inline-flex;
+  padding: 8px 10px;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-address {
+  color: var(--Neutral, #e9e9e9);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.default-address {
+  color: var(--Secondary, #3e3636);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  padding: 10px;
+}
+
+.address-card {
+  border: none;
+  background-color: #e9e9e9;
+  margin-left: 10px; /* Add left margin */
+  margin-right: 10px; /* Add right margin */
+}
+
+.other-address {
+  color: var(--Secondary, #3e3636);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  padding: 10px;
+}
+
+.pen-line,
+.cross {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--Neutral, #e9e9e9);
+}
+
+.tag {
+  display: flex;
+  width: 82px;
+  height: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center; /* Center from top and bottom */
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #f2e5d5;
+}
+
+.icons {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  background: var(--Neutral, #e9e9e9);
+}
+
+.popup {
+  position: absolute;
+  z-index: 99;
+  top: 70px;
+  left: 470px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 1020px;
+}
+
+.close-button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  left: 280px;
+  top: 10px;
+  padding: 0;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .button {
+    /* Adjust button styles for smaller screens */
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  .button-content {
+    /* Adjust button content styles for smaller screens */
+    padding: 8px 12px;
+  }
+
+  .button-address {
+    /* Adjust button address styles for smaller screens */
+    font-size: 12px;
+  }
+
+  .default-address {
+    /* Adjust default address styles for smaller screens */
+    padding: 10px 5px 5px 5px;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .default-address-card {
+    /* Adjust default address card styles for smaller screens */
+    margin: 5px;
+  }
+
+  .other-address {
+    /* Adjust other address styles for smaller screens */
+    padding: 10px 5px 5px 5px;
+  }
+
+  .pen-line,
+  .cross {
+    /* Adjust pen-line and cross button styles for smaller screens */
+    width: 20px;
+    height: 20px;
+    gap: 8px;
+  }
+
+  .tag {
+    width: 70px;
+    height: 24px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .icons {
+    /* Adjust icons styles for smaller screens */
+    width: 20px;
+    height: 20px;
+    gap: 8px;
+  }
+
+  .popup {
+    position: absolute;
+    z-index: 99;
+    top: 70px;
+    left: 17px;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+  }
+}
